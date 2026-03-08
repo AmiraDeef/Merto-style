@@ -9,90 +9,224 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./css//style.css">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
- <nav class="navbar bg-white border-bottom py-3 px-3">
-  <div class="container-fluid mx-5">
-    <div class="row w-100 align-items-center g-0">
+  <nav class="navbar bg-white border-bottom py-3 px-3">
+    <div class="container-fluid mx-5">
+      <div class="row w-100 align-items-center g-0">
 
-      <div class="col-2">
-        <img src="/images/logo.png" class="img-fluid w-50" alt="Merto">
-      </div>
-
-      <div class="col-2 d-flex align-items-center gap-2">
-        <i class="bi bi-telephone fs-3"></i>
-        <!-- <i class="fa-solid fa-phone fs-4"></i> -->
-        <div class="lh-1 m-1">
-          <small class="fs-5 mb-1">Contact us 24/7</small>
-          <div class="fw-bold text-nowrap fs-5">(+92) 3942 7879</div>
+        <div class="col-2">
+          <img src="/images/logo.png" class="img-fluid w-50" alt="Merto">
         </div>
-      </div>
 
-     
-      <div class="col-4">
-        <div class="input-group rounded overflow-hidden mx-auto">
-          <select class="form-select bg-light border-0 py-3">
-            <option selected>All Categories</option>
-            <option>Autopart</option>
-            <option>Car Care</option>
-            <option>Equipment</option>
-          </select>
-          <input type="text" class="form-control bg-light border-0 border-start w-50 " placeholder="Search for products">
-          <button class="btn btn-dark rounded ">
-            <i class="fa-solid fa-magnifying-glass"></i>
+
+        <div class="col-2 d-flex align-items-center gap-2">
+          <a href="tel:+9239427879" class="d-flex align-items-center gap-2 text-decoration-none text-dark">
+            <!-- <i class="fa-solid fa-phone fs-4"></i> -->
+            <i class="bi bi-telephone fs-3"></i>
+
+            <div class="lh-1 m-1">
+              <small class="fs-6 mb-1 d-block text-reset">Contact us 24/7</small>
+              <div class="fw-bold text-nowrap fs-6">(+92) 3942 7879</div>
+            </div>
+
+          </a>
+        </div>
+
+
+        <div class="col-4">
+          <div class="input-group rounded overflow-hidden mx-auto">
+            <select class="form-select bg-light border-0 py-3">
+              <option selected>All Categories</option>
+              <option>Autopart</option>
+              <option>Car Care</option>
+              <option>Equipment</option>
+            </select>
+            <input type="text" class="form-control bg-light border-0 border-start w-50 "
+              placeholder="Search for products">
+            <button class="btn btn-dark rounded ">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </div>
+
+
+        <div class="col-4 d-flex justify-content-end align-items-center gap-3">
+
+
+          <div class="d-flex align-items-center gap-1">
+            <img src="https://flagcdn.com/w20/us.png" alt="USA">
+            <select class="form-select form-select-sm border-0 bg-transparent">
+              <option selected>English</option>
+              <option>Arabic</option>
+            </select>
+            <select class="form-select form-select-sm border-0 bg-transparent">
+              <option selected>USD</option>
+            </select>
+          </div>
+
+
+          <div class="d-flex align-items-center gap-2 fw-semibold">
+            <i class="fa-regular fa-user fs-5"></i>
+            <span>Account</span>
+          </div>
+
+
+          <div class="d-flex gap-3">
+            <div class="position-relative">
+              <i class="fa-regular fa-heart fs-5"></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger">
+                0
+              </span>
+            </div>
+
+            <div class="position-relative">
+              <i class="bi bi-cart2  fw-bold fs-5 "></i>
+              <!-- <i class="fa-solid fa-cart-shopping fs-5"></i> -->
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger">
+                0
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <section class="border-bottom">
+    <div class="container-fluid px-5">
+      <div class="d-flex align-items-center">
+
+        <div class="border-end pe-4 py-3">
+          <button class="btn d-flex align-items-center fw-bold p-0 border-0" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#categorySidebar">
+            <i class="bi bi-list fs-4 me-2"></i> SHOP BY CATEGORIES
           </button>
         </div>
-      </div>
 
-      
-      <div class="col-4 d-flex justify-content-end align-items-center gap-3">
 
-       
-        <div class="d-flex align-items-center gap-1">
-          <img src="https://flagcdn.com/w20/us.png" alt="USA">
-          <select class="form-select form-select-sm border-0 bg-transparent">
-            <option selected>English</option>
-            <option>Arabic</option>
+        <nav class="navbar py-0 ms-4">
+          <div class="ms-4 d-flex gap-3">
+            <select class="form-select w-auto d-inline-block border-0 bg-transparent fw-medium shadow-none ps-2"
+              onchange="window.location.href=this.value;">
+              <option selected disabled>Homepages</option>
+            </select>
+
+            <select class="form-select d-inline-block w-auto border-0 bg-transparent fw-medium shadow-none ps-2"
+              onchange="window.location.href=this.value;">
+              <option selected disabled>Categories</option>
+            </select>
+            <select class="form-select d-inline-block w-auto border-0 bg-transparent fw-medium shadow-none ps-2"
+              onchange="window.location.href=this.value;">
+              <option selected disabled>Categories</option>
+            </select>
+
+            <select class="form-select d-inline-block w-auto border-0 bg-transparent fw-medium shadow-none ps-2"
+              onchange="window.location.href=this.value;">
+              <option selected disabled>Categories</option>
+            </select>
+
+
+
+            <a href="#" class="text-decoration-none text-dark fw-medium m-2">
+              Blog
+            </a>
+            <a href="#" class="text-decoration-none text-dark fw-medium m-2"> About us
+            </a>
+
+            <a href="#" class="text-decoration-none text-dark fw-medium m-2">
+              <i class="bi bi-ticket-perforated me-2"></i> Best Discount
+            </a>
+        </nav>
+
+
+        <div class="ms-auto d-flex align-items-center gap-4">
+          <select class="form-select w-auto border-0 bg-transparent fw-medium shadow-none py-1"
+            onchange="window.location.href=this.value;">
+            <option selected disabled>Recently viewed</option>
+            <option value="shop-grid.html">Full Width Grid</option>
           </select>
-          <select class="form-select form-select-sm border-0 bg-transparent">
-            <option selected>USD</option>
-          </select>
-        </div>
-
-      
-        <div class="d-flex align-items-center gap-2 fw-semibold">
-          <i class="fa-regular fa-user fs-5"></i>
-          <span>Account</span>
-        </div>
-
-    
-        <div class="d-flex gap-3">
-          <div class="position-relative">
-            <i class="fa-regular fa-heart fs-5"></i>
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger">
-              0
-            </span>
-          </div>
-
-          <div class="position-relative">
-            <i class="bi bi-cart2 fs-5"></i>
-            <!-- <i class="fa-solid fa-cart-shopping fs-5"></i> -->
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger">
-              0
-            </span>
-          </div>
         </div>
 
       </div>
+    </div>
+  </section>
 
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="categorySidebar" style="width: 300px;">
+    <div class="offcanvas-header bg-dark text-white">
+      <i class="bi bi-list fs-4 me-2"></i>
+      <h5 class="offcanvas-title fs-6 fw-bold">SHOP BY CATEGORIES</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body p-0">
+      <div class="list-group list-group-flush">
+        <a href="#" class="list-group-item list-group-item-action d-flex align-items-center py-3 border-bottom-0">
+          <i class="fa-solid fa-shirt me-3 fs-5"></i> Fashion
+          <i class="bi bi-chevron-right ms-auto text-muted small"></i>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex align-items-center py-3 border-bottom-0">
+          <i class="bi bi-phone me-3 fs-5"></i> Phone & Tablet
+          <i class="bi bi-chevron-right ms-auto text-muted small"></i>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex align-items-center py-3 border-bottom-0">
+          <i class="bi bi-laptop me-3 fs-5"></i> Laptop &
+          Computer
+          <i class="bi bi-chevron-right ms-auto text-muted small"></i>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex align-items-center py-3 border-bottom-0">
+          <i class="bi bi-tv me-3 fs-5"></i> TV, Audio - Video
+          <i class="bi bi-chevron-right ms-auto text-muted small"></i>
+        </a>
+      </div>
     </div>
   </div>
-</nav>
+  <nav
+    style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+    aria-label="breadcrumb">
+    <div class="container-fluid ms-5 px-5 py-2 small">
+      <ol class="breadcrumb align-items-center mt-2 ms-5">
+        <li class="breadcrumb-item">
+          <a href="#" class="text-dark text-decoration-none hover-red">Home</a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="#" class="text-dark text-decoration-none hover-red">Shop</a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="#" class="text-dark text-decoration-none hover-red">Electronic</a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="#" class="text-dark text-decoration-none hover-red">Apple</a>
+        </li>
+        <li class="breadcrumb-item active text-muted fw-normal" aria-current="page">
+          Apple Watch Series 9 GPS 45mm, Aluminum Case with Sport Band
+        </li>
+      </ol>
+    </div>
+  </nav>
+  <section class="container my-5">
+
+    <div class="row">
+      <!-- <div class="col-4">
+
+
+
+
+
+
+      </div>
+      <div class="col-8">col-8</div>
+
+    </div> -->
+    </div>
+  </section>
 
 
   <script src="./js/script.js"></script>
