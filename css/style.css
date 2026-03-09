@@ -6,3 +6,11 @@ a:hover {
     text-decoration-line:underline !important;
     color:black !important;
 }
+.offcanvas a:hover{
+  text-decoration-line:underline !important;
+    color:black !important;
+}
+.expand:hover{
+  background-color: red;
+    color:white !important;
+}
