@@ -1,4 +1,8 @@
 const bigImg=document.getElementById('img-center')
-bigImg.addEventListener('click')
-const smallImg=document.getElementsByClassName('img-small')
+const smallImgs=document.querySelectorAll('.img-small')
 
+smallImgs.forEach(img=>{
+    img.addEventListener('click',function(){
+        bigImg.src=img.src
+    })
+})
