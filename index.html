@@ -17,11 +17,11 @@
 
 <body>
 
-  <nav class="navbar bg-white border-bottom py-3 px-3">
-    <div class="container-fluid mx-5 p-2">
+  <nav class="navbar bg-white border-bottom py-4 px-0">
+    <div class="container-fluid px-lg-5">
       <div class="row w-100 align-items-center g-0">
 
-        <div class="col-2">
+        <div class="col-2 ps-5">
           <img src="/images/logo.png" class="img-fluid w-50" alt="Merto">
         </div>
 
@@ -42,7 +42,8 @@
 
         <div class="col-4">
           <div class="input-group rounded ">
-            <select class="form-select bg-light border-0 py-3 " style="width: 5rem;">
+            <select class="form-select bg-light border-0 py-3 w-auto">
+
               <option selected>All Categories</option>
             </select>
             <input type="text" class="form-control bg-light border-0 border-start" placeholder="Search for products"
@@ -56,7 +57,7 @@
         </div>
 
 
-        <div class="col-4 d-flex justify-content-end align-items-center gap-3">
+        <div class="col-4 d-flex justify-content-center align-items-center ps-5 gap-3">
 
 
           <div class="d-flex align-items-center gap-1">
@@ -71,7 +72,7 @@
           </div>
 
 
-          <div class="d-flex align-items-center gap-2 fw-semibold">
+          <div class="d-flex align-items-end gap-2 fw-semibold">
             <a href="" style="color: black; text-decoration: none;"><i class="fa-regular fa-user fs-5"></i>
               <span>Account</span></a>
           </div>
@@ -79,7 +80,7 @@
 
           <div class="d-flex gap-3">
             <div class="position-relative">
-              <a href="#" style="color: black;"><i class="fa-regular fa-heart fs-5"></i>
+              <a href="#" class="text-dark"><i class="fa-regular fa-heart fs-5"></i>
 
                 <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger">
                   0
@@ -88,8 +89,9 @@
             </div>
 
             <div class="position-relative">
-              <a href="#" style="color: black;"><i class="bi bi-cart2  fw-bold fs-5 "></i>
-                <!-- <i class="fa-solid fa-cart-shopping fs-5"></i> -->
+              <a href="#" class="text-dark">
+                <!--  <i class="bi bi-cart2 fw-bold"style=font-size:20px;></i> -->
+                <i class="fa-solid fa-cart-shopping fs-5"></i>
                 <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger">
                   0
                 </span></a>
@@ -190,8 +192,8 @@
   <nav
     style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
     aria-label="breadcrumb">
-    <div class="container-fluid ms-5 px-5 py-2 small">
-      <ol class="breadcrumb align-items-center mt-2 ms-5">
+    <div class="container py-2 small">
+      <ol class="breadcrumb align-items-center mt-3 ms-1">
         <li class="breadcrumb-item">
           <a href="#" class="text-dark text-decoration-none hover-red">Home</a>
         </li>
@@ -214,26 +216,32 @@
     <div class="row">
       <div class="col-1">
         <div class="card mb-3">
-          <img src="./images/electronic-14-2.jpg" class="card-img-top card-img-bottom object-fit-cover img-small" >
+          <img src="./images/electronic-14-2.jpg" class="card-img-top card-img-bottom object-fit-cover img-small"
+            alt="Brown">
         </div>
         <div class="card mb-3 ">
-          <img src="./images/electronic-14.jpg" class="card-img-top card-img-bottom object-fit-cover img-small">
+          <img src="./images/electronic-14.jpg" class="card-img-top card-img-bottom object-fit-cover img-small"
+            alt="Black">
         </div>
         <div class="card mb-3 ">
-          <img src="./images/electronic-15-2.jpg" class="card-img-top card-img-bottom object-fit-cover img-small" >
+          <img src="./images/electronic-15-2.jpg" class="card-img-top card-img-bottom object-fit-cover img-small"
+            alt="Navy">
         </div>
         <div class="card mb-3 ">
-          <img src="./images/electronic-16.jpg" class="card-img-top card-img-bottom object-fit-cover img-small" >
+          <img src="./images/electronic-16.jpg" class="card-img-top card-img-bottom object-fit-cover img-small"
+            alt="White">
         </div>
       </div>
 
       <div class="col-6">
-        <div class="card position-relative ">
+        <div class="card position-relative">
+
           <span
-            class=" badge text-bg-danger top-0 start-0 m-3 py-3 position-absolute fw-semibold fs-6 d-flex align-items-center justify-content-center "
+            class="badge text-bg-danger top-0 start-0 m-3 py-3 position-absolute fw-semibold fs-6 d-flex align-items-center justify-content-center "
             style="width: 4rem; height: 2rem;">-6%</span>
-          <img src="./images/electronic-14-2.jpg" class="card-img-top card-img-bottom img-fluid object-fit-cover "id="img-center"
-            style="object-fit: cover;" alt="...">
+
+          <img src="./images/electronic-14-2.jpg" class="img-fluid w-100" id="img-center" alt="Product" data-zoom-image="./images/electronic-14-2.jpg">
+
           <a href="#"
             class="btn btn-light position-absolute top-0 end-0 m-3 d-flex align-items-center justify-content-center p-2 rounded-1 border shadow-sm text-dark expand"
             style="width: 40px; height: 40px;">
@@ -286,48 +294,221 @@
             class="badge fst-italic bg-success-subtle text-success border-0 border-success-subtle fw-medium px-3 py-2 mb-3 fs-6">
             In stock
           </span>
-          <p class="fw-bold mb-2">Color:</p>
+          <div class="d-flex">
+            <p class="fw-bold mb-2 pe-2">Color:</p><span id="color" class="text-secondary fst-italic fw-medium"></span>
+          </div>
+
           <div class="d-flex gap-2">
+
             <div class="border rounded" style="width: 60px; height: 60px;">
-              <img src="./images/electronic-14-2.jpg" class="img-fluid h-100 object-fit-cover rounded img-small" >
+              <img src="./images/electronic-14-2.jpg" class="img-fluid h-100 object-fit-cover rounded img-small"
+                alt="Brown">
+            </div>
+            <div class="border rounded" style="width: 60px; height: 60px;">
+              <img src="./images/electronic-14.jpg" class="img-fluid h-100 object-fit-cover rounded img-small"
+                alt="Black">
+            </div>
+
+
+
+            <div class="border rounded" style="width: 60px; height: 60px;">
+              <img src="./images/electronic-15-2.jpg" class="img-fluid h-100 object-fit-cover rounded img-small"
+                alt="Navy">
             </div>
 
             <div class="border rounded" style="width: 60px; height: 60px;">
-              <img src="./images/electronic-14.jpg" class="img-fluid h-100 object-fit-cover rounded img-small" >
-            </div>
+              <img src="./images/electronic-16.jpg" class="img-fluid h-100 object-fit-cover rounded img-small"
+                alt="White">
 
-            <div class="border rounded" style="width: 60px; height: 60px;">
-              <img src="./images/electronic-15-2.jpg" class="img-fluid h-100 object-fit-cover rounded img-small" >
-            </div>
-
-            <div class="border rounded" style="width: 60px; height: 60px;">
-              <img src="./images/electronic-15-2.jpg" class="img-fluid h-100 object-fit-cover rounded img-small" >
             </div>
           </div>
-          <div class="d-flex align-items-center gap-2 mt-4 ">
-            <div class="input-group w-auto bg-light rounded px-2">
-              <button class="btn border-0 text-secondary  fs-5" type="button">-</button>
-              <span class="px-2 fw-bold text-center pt-2 ">1</span>
-              <button class="btn border-0 text-secondary fs-5" type="button">+</button>
+          <div class="d-flex align-items-center gap-2 mt-4">
+            <div class="input-group w-auto bg-light rounded-1 px-1 ">
+              <button class="btn border-0 text-secondary fs-5 py-2" type="button">-</button>
+              <span class="px-3 fw-bold d-flex align-items-center justify-content-center">1</span>
+              <button class="btn border-0 text-secondary fs-5 py-2" type="button">+</button>
             </div>
 
-            <button class="btn fw-bold px-4 flex-grow-1 border-0  py-2 btn-outline-dark">
-              + ADD TO CART
+            <button class="btn btn-dark flex-grow-1 fw-bold rounded-1 py-3 text-uppercase cart"
+              style="font-size: 0.8rem;">
+              + Add to Cart
             </button>
 
-            <button class="btn fw-bold px-4 flex-grow-1 border-0 btn-outline-danger py-2">
-              BUY NOW
+            <button class="btn btn-danger flex-grow-1 fw-bold rounded-1 py-3 text-uppercase cart"
+              style="font-size: 0.8rem;">
+              Buy Now
             </button>
+          </div>
+          <div class="d-flex  pt-4 fs-6 ">
+            <div><a href="" class="text-decoration-none text-secondary"><i class="fa-regular fa-heart fa-2xs pe-3"></i>
+                add to compare</a>
+            </div>
+            <div class="ps-5"><a href="" class='text-decoration-none text-secondary'><i
+                  class="fa-solid fa-arrow-right-arrow-left fa-2xs pe-3"></i></i>
+                add to wishlist</a>
+            </div>
+          </div>
+          <div class="border  border-dark rounded p-3 mt-4 bg-white shadow-sm">
+            <p class="fw-bold mb-2 small">Special offer</p>
+            <div class="small text-secondary mb-2">
+              <i class="fa-regular fa-credit-card text-dark"></i> 10% off, maximum $20 when paying with PAYPAL
+            </div>
+            <div class="small text-secondary ">
+              <i class="fa-solid fa-percent me-2 text-dark"></i> 50% off or More iPad Cases, Covers & Keyboard Folios
+            </div>
+
+          </div>
+          <div class="mt-4 small text-secondary fst-italic">
+            <div><span class="fst-italic fw-medium fs-6">SKU : </span> <span
+                class="text-dark fw-normal">WHY91OSQCW</span></div>
+            <div><span class="fst-italic fw-medium fs-6">Categories : </span> <a href="#"
+                class="text-dark text-decoration-none">Apple </a>, <a href="#"
+                class="text-dark text-decoration-none">Smartwatch</a></div>
+          </div>
+          <div class="d-flex gap-3 mt-3">
+            <a href="#" class="text-secondary hover-red"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-secondary hover-red"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="text-secondary hover-red"><i class="bi bi-pinterest"></i></a>
+            <a href="#" class="text-secondary hover-red"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
       </div>
   </section>
 
+  <footer class="bg-dark text-light pt-5 pb-3">
+    <div class="container">
 
-  <script src="./js/script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
+      <div class="row g-4">
+
+        <div class="col-lg-3 col-md-6 pt-2 ">
+          <img src="./images/logo1.png" alt="Logo" width="170" height="74" class="d-inline-block align-text-top p-3 ">
+          </a>
+          <p class="text-secondary">
+            <i class="fa-solid fa-location-dot " style="color: rgb(129, 124, 129);"></i> 29 SE 2nd Ave, Miami<br>
+            Florida 33131, United States
+          </p>
+          <p class="text-secondary"> <i class="fa-solid fa-envelope" style="color: rgb(129, 124, 129);"></i>
+            info@example.com</p>
+          <h5 class="fw-bold">(+92) 3942 7879</h5>
+        </div>
+
+
+        <div class="col-lg-2 col-md-6 pt-5">
+          <h5 class="mb-3">SHOPPING</h5>
+          <ul class="list-unstyled ">
+            <li class="pb-2"><a href="#" class="text-decoration-none text-light">Wishlist</a></li>
+            <li class="pb-2"><a href="#" class="text-decoration-none text-light">Shop by Brand</a></li>
+            <li class="pb-2"><a href="#" class="text-decoration-none text-light">Offers</a></li>
+            <li class="pb-2"><a href="#" class="text-decoration-none text-light">Track Order</a></li>
+            <li class="pb-2"><a href="#" class="text-decoration-none text-light">Size Guide</a></li>
+          </ul>
+        </div>
+
+
+        <div class="col-lg-2 col-md-6 pt-5">
+          <h5 class="mb-3">INFORMATION</h5>
+          <ul class="list-unstyled">
+            <li class="pb-2"><a href="#" class="text-decoration-none text-light">Track Order</a></li>
+            <li class="pb-2"><a href="#" class="text-decoration-none text-light">Shipping & Returns</a></li>
+            <li class="pb-2"><a href="#" class="text-decoration-none text-light">About us</a></li>
+            <li class="pb-2"><a href="#" class="text-decoration-none text-light">Help</a></li>
+            <li class="pb-2"><a href="#" class="text-decoration-none text-light">Gift Cards</a></li>
+          </ul>
+        </div>
+
+
+        <div class="col-lg-2 col-md-6 pt-5">
+          <h5 class="mb-3">ACCOUNT</h5>
+          <ul class="list-unstyled">
+            <li class="pb-2"><a href="#" class="text-decoration-none text-light">Cart</a></li>
+            <li class="pb-2"><a href="#" class="text-decoration-none text-light">My account</a></li>
+            <li class="pb-2"><a href="#" class="text-decoration-none text-light">My orders</a></li>
+            <li class="pb-2"><a href="#" class="text-decoration-none text-light">Wishlist</a></li>
+            <li class="pb-2"><a href="#" class="text-decoration-none text-light">Affiliate Program</a></li>
+          </ul>
+        </div>
+
+
+        <div class="col-lg-3 col-md-6 pt-5">
+          <h5 class="mb-3">Let’s keep in touch</h5>
+
+          <div class="input-group mb-3 text-white">
+            <input type="email" class=" form-control bg bg-transparent bg-opacity-50 "
+              placeholder="enter your email address">
+            <a class="btn btn-outline-light bg-transparent "><i class="bi bi-arrow-right fs-5"></i></a>
+          </div>
+
+
+
+
+          <div class="d-flex gap-3">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-tiktok"></i>
+            <i class="bi bi-twitter-x"></i>
+            <i class="bi bi-youtube"></i>
+            <i class="bi bi-instagram"></i>
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <div class="container-fluid border border-secondary my-4 p-3">
+        <div class="row">
+          <div class="col">
+            <div class="d-flex">
+              <i class="bi bi-telephone me-2"></i>
+
+              <p>Didn't find what you were looking for?</p>
+            </div>
+
+            <a href="" class="text-light ms-4"> Contact Us</a>
+
+
+          </div>
+          <div class="col ">
+            <div class="d-flex">
+              <i class="bi bi-emoji-smile me-2"></i>
+
+              <p>How can we help you today?</p>
+            </div>
+
+            <a href="#" class="text-light ms-4">Help Center</a>
+
+
+          </div>
+          <div class="col ">
+            <div class="d-flex">
+              <i class="bi bi-dribbble me-2"></i>
+
+              <p>We’d love to hear what you think!</p>
+            </div>
+
+            <a href="#" class="text-light ms-4"> Give Feedback</a>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-between flex-wrap pb-3">
+        <p class="mb-0 text-secondary small">Copyright © Merto. All Rights Reserved</p>
+
+        <div>
+          <img src="./images/payment-icons.png " width="260" alt="" srcset="">
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+ <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/elevatezoom/3.0.8/jquery.elevatezoom.min.js"></script>
+<script src="./js/script.js"></script>
 </body>
 
 </html>
