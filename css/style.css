@@ -14,3 +14,20 @@ a:hover {
   background-color: red;
     color:white !important;
 }
+
+input::placeholder{
+  color: gray !important;
+  opacity: 1;
+}
+
+/* .cart button:hover{
+  border: 2 solid black;
+} */
+
+.zoomContainer, .zoomContainer div {
+    cursor: zoom-in !important;
+}
+
+#img-center {
+    cursor: zoom-in;
+}
